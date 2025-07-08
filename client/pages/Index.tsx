@@ -100,7 +100,7 @@ export default function Index() {
               </div>
 
               {/* Right Content - Image */}
-              <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="order-1 lg:order-2 flex justify-center">
                 <div className="relative">
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/960fdbe5cbd2ea8636d43f75f1ba0a2bef04942e?width=1636"
