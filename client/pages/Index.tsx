@@ -1,9 +1,9 @@
 export default function Index() {
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="h-screen relative overflow-hidden">
       {/* Left Section - Navy Blue */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="absolute left-0 top-0 w-full md:w-[55%] h-full bg-[#1A1A59] z-10">
+        <div className="absolute left-0 top-0 w-full md:w-[55%] h-full bg-[#1A1A59] z-10 animate-slide-in-left">
           <svg
             className="absolute inset-0 w-full h-full object-cover"
             viewBox="0 0 703 832"
@@ -18,7 +18,7 @@ export default function Index() {
         </div>
 
         {/* Right Section - Burgundy Red */}
-        <div className="absolute right-0 top-0 w-full md:w-[62%] h-full bg-[#8A1919] z-0">
+        <div className="absolute right-0 top-0 w-full md:w-[62%] h-full bg-[#8A1919] z-0 animate-slide-in-right">
           <svg
             className="absolute inset-0 w-full h-full object-cover"
             viewBox="0 0 658 832"
@@ -33,10 +33,39 @@ export default function Index() {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-20 min-h-screen flex flex-col">
+      {/* KENDRICK LAMAR Text - Behind Image */}
+      <div className="absolute inset-0 flex items-center justify-center z-15">
+        <h1 className="font-inria-serif font-bold text-6xl md:text-8xl lg:text-9xl xl:text-[140px] leading-none tracking-wide animate-fade-in-up">
+          <span
+            className="bg-gradient-to-r from-[rgba(255,0,0,0.8)] to-[rgba(0,0,255,0.8)] bg-clip-text text-transparent"
+            style={{
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+              WebkitTextStroke: "1px rgba(0,0,0,0.1)",
+            }}
+          >
+            KENDRICK LAMAR
+          </span>
+        </h1>
+      </div>
+
+      {/* Centered Image - Above Text */}
+      <div className="absolute inset-0 flex items-center justify-center z-20">
+        <div className="animate-scale-in">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/960fdbe5cbd2ea8636d43f75f1ba0a2bef04942e?width=1636"
+            alt="Kendrick Lamar"
+            className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] h-auto object-cover shadow-[0px_4px_30px_0px_rgba(0,0,0,0.5)]"
+            style={{
+              filter: "drop-shadow(0px 4px 30px rgba(0,0,0,0.7))",
+            }}
+          />
+        </div>
+      </div>
+
+      {/* Content Layer */}
+      <div className="relative z-30 h-screen flex flex-col">
         {/* Header */}
-        <header className="p-6 md:p-8 lg:p-12 flex justify-between items-start">
+        <header className="p-6 md:p-8 lg:p-12 flex justify-between items-start animate-fade-in-down">
           <div className="text-white font-island-moments text-4xl md:text-6xl lg:text-8xl xl:text-[96px] leading-none tracking-wide">
             K-dot
           </div>
@@ -58,60 +87,29 @@ export default function Index() {
           </div>
         </header>
 
-        {/* Main Content */}
-        <main className="flex-1 px-6 md:px-8 lg:px-12 pb-8 md:pb-12 lg:pb-16">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-200px)]">
-              {/* Left Content */}
-              <div className="order-2 lg:order-1 space-y-6 md:space-y-8 lg:space-y-12">
-                {/* Main Heading */}
-                <h1 className="font-inria-serif font-bold text-4xl md:text-6xl lg:text-7xl xl:text-[128px] leading-none tracking-wide">
-                  <span
-                    className="bg-gradient-to-r from-[rgba(255,0,0,0.8)] to-[rgba(0,0,255,0.8)] bg-clip-text text-transparent"
-                    style={{
-                      textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                      WebkitTextStroke: "1px rgba(0,0,0,0.1)",
-                    }}
-                  >
-                    KENDRICK LAMAR
-                  </span>
-                </h1>
+        {/* Bottom Left Content */}
+        <div className="absolute bottom-8 md:bottom-12 lg:bottom-16 left-6 md:left-8 lg:left-12 space-y-6 md:space-y-8 animate-fade-in-up-delayed">
+          {/* Divider Line */}
+          <div className="w-48 md:w-64 lg:w-[270px] h-px bg-white/50"></div>
 
-                {/* Divider Line */}
-                <div className="w-48 md:w-64 lg:w-[270px] h-px bg-white/50"></div>
+          {/* Tagline */}
+          <p className="text-white font-inria-serif italic text-lg md:text-2xl lg:text-3xl xl:text-[35px] leading-relaxed tracking-wide max-w-sm">
+            Poetic justice in every bar.
+          </p>
 
-                {/* Tagline */}
-                <p className="text-white font-inria-serif italic text-lg md:text-2xl lg:text-3xl xl:text-[35px] leading-relaxed tracking-wide max-w-sm">
-                  Poetic justice in every bar.
-                </p>
-
-                {/* CTA Buttons */}
-                <div className="space-y-3 md:space-y-4 lg:space-y-[11px]">
-                  <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
-                    Listen now
-                  </button>
-                  <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
-                    Tour dates
-                  </button>
-                  <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
-                    Merch
-                  </button>
-                </div>
-              </div>
-
-              {/* Right Content - Image */}
-              <div className="order-1 lg:order-2 flex justify-center">
-                <div className="relative">
-                  <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/960fdbe5cbd2ea8636d43f75f1ba0a2bef04942e?width=1636"
-                    alt="Kendrick Lamar"
-                    className="w-64 md:w-80 lg:w-96 xl:w-[500px] h-auto object-cover shadow-[0px_4px_20px_0px_#000] rounded-lg"
-                  />
-                </div>
-              </div>
-            </div>
+          {/* CTA Buttons */}
+          <div className="space-y-3 md:space-y-4 lg:space-y-[11px]">
+            <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left animate-fade-in-stagger-1">
+              Listen now
+            </button>
+            <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left animate-fade-in-stagger-2">
+              Tour dates
+            </button>
+            <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left animate-fade-in-stagger-3">
+              Merch
+            </button>
           </div>
-        </main>
+        </div>
       </div>
     </div>
   );
