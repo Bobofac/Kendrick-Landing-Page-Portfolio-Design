@@ -37,7 +37,7 @@ export default function Index() {
       <div className="relative z-20 min-h-screen flex flex-col">
         {/* Header */}
         <header className="p-6 md:p-8 lg:p-12 flex justify-between items-start">
-          <div className="text-white font-['Island_Moments'] text-4xl md:text-6xl lg:text-8xl xl:text-[96px] leading-none tracking-wide">
+          <div className="text-white font-island-moments text-4xl md:text-6xl lg:text-8xl xl:text-[96px] leading-none tracking-wide">
             K-dot
           </div>
 
