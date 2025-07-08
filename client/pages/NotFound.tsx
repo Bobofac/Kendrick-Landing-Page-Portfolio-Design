@@ -14,18 +14,18 @@ const NotFound = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#1A1A59] to-[#8A1919] flex items-center justify-center">
       <div className="text-center space-y-6">
-        <div className="text-white font-['Island_Moments'] text-4xl md:text-6xl mb-8">
+        <div className="text-white font-island-moments text-4xl md:text-6xl mb-8">
           K-dot
         </div>
-        <h1 className="text-white font-['Inria_Serif'] text-6xl md:text-8xl font-bold mb-4">
+        <h1 className="text-white font-inria-serif text-6xl md:text-8xl font-bold mb-4">
           404
         </h1>
-        <p className="text-white/80 font-['Inria_Serif'] text-xl md:text-2xl mb-8">
+        <p className="text-white/80 font-inria-serif text-xl md:text-2xl mb-8">
           This page doesn't exist in my discography
         </p>
         <a
           href="/"
-          className="inline-block text-white font-['Inria_Serif'] text-lg md:text-xl border border-white/50 px-8 py-3 hover:bg-white/10 transition-colors"
+          className="inline-block text-white font-inria-serif text-lg md:text-xl border border-white/50 px-8 py-3 hover:bg-white/10 transition-colors"
         >
           Return to Home
         </a>
