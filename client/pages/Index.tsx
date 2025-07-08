@@ -35,8 +35,8 @@ export default function Index() {
           </button>
         </header>
 
-        {/* Menu Button - Desktop (Over Center Line) */}
-        <div className="hidden md:flex absolute top-8 lg:top-12 left-1/2 transform -translate-x-1/2 items-center gap-4 z-40 animate-fade-in-down">
+        {/* Menu Button - Desktop (Right Side) */}
+        <div className="hidden md:flex absolute top-8 lg:top-12 right-8 lg:right-16 flex-col items-center gap-2 z-40 animate-fade-in-down">
           <span className="text-white text-xl lg:text-2xl xl:text-[25px] font-semibold">
             Menu
           </span>
