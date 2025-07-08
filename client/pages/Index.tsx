@@ -73,13 +73,11 @@ export default function Index() {
           </button>
 
           {/* Menu Button - Desktop */}
-          <div className="hidden md:block absolute right-8 lg:right-16 xl:right-24 top-1/2 transform -translate-y-1/2">
-            <div className="flex flex-col items-center gap-4 transform -rotate-90">
-              <span className="text-white text-xl lg:text-2xl xl:text-[25px] font-semibold whitespace-nowrap">
-                Menu
-              </span>
-              <div className="w-12 lg:w-16 h-1 bg-white"></div>
-            </div>
+          <div className="hidden md:flex items-center gap-4">
+            <span className="text-white text-xl lg:text-2xl xl:text-[25px] font-semibold">
+              Menu
+            </span>
+            <div className="w-12 lg:w-16 h-1 bg-white"></div>
           </div>
         </header>
 
