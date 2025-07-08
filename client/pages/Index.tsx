@@ -23,7 +23,7 @@ export default function Index() {
       {/* Content Layer */}
       <div className="relative z-30 h-screen flex flex-col">
         {/* Header */}
-        <header className="p-6 md:p-8 lg:p-12 flex justify-between items-start animate-fade-in-down">
+        <header className="p-6 md:p-8 lg:p-12 flex justify-between items-start animate-fade-in-down relative">
           <div className="text-white font-island-moments text-4xl md:text-6xl lg:text-8xl xl:text-[96px] leading-none tracking-wide">
             K-dot
           </div>
@@ -33,15 +33,15 @@ export default function Index() {
             <span className="text-lg font-semibold">Menu</span>
             <div className="w-8 h-0.5 bg-white"></div>
           </button>
-
-          {/* Menu Button - Desktop */}
-          <div className="hidden md:flex items-center gap-4">
-            <span className="text-white text-xl lg:text-2xl xl:text-[25px] font-semibold">
-              Menu
-            </span>
-            <div className="w-12 lg:w-16 h-1 bg-white"></div>
-          </div>
         </header>
+
+        {/* Menu Button - Desktop (Over Center Line) */}
+        <div className="hidden md:flex absolute top-8 lg:top-12 left-1/2 transform -translate-x-1/2 items-center gap-4 z-40 animate-fade-in-down">
+          <span className="text-white text-xl lg:text-2xl xl:text-[25px] font-semibold">
+            Menu
+          </span>
+          <div className="w-12 lg:w-16 h-1 bg-white"></div>
+        </div>
 
         {/* Bottom Left Content */}
         <div className="absolute bottom-8 md:bottom-12 lg:bottom-16 left-6 md:left-8 lg:left-12 space-y-6 md:space-y-8 animate-fade-in-up-delayed">
