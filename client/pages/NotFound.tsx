@@ -12,11 +12,21 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
+    <div className="min-h-screen bg-gradient-to-r from-[#1A1A59] to-[#8A1919] flex items-center justify-center">
+      <div className="text-center space-y-6">
+        <div className="text-white font-['Island_Moments'] text-4xl md:text-6xl mb-8">
+          K-dot
+        </div>
+        <h1 className="text-white font-['Inria_Serif'] text-6xl md:text-8xl font-bold mb-4">
+          404
+        </h1>
+        <p className="text-white/80 font-['Inria_Serif'] text-xl md:text-2xl mb-8">
+          This page doesn't exist in my discography
+        </p>
+        <a
+          href="/"
+          className="inline-block text-white font-['Inria_Serif'] text-lg md:text-xl border border-white/50 px-8 py-3 hover:bg-white/10 transition-colors"
+        >
           Return to Home
         </a>
       </div>
