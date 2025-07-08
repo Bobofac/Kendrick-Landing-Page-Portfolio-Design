@@ -87,13 +87,13 @@ export default function Index() {
 
                 {/* CTA Buttons */}
                 <div className="space-y-3 md:space-y-4 lg:space-y-[11px]">
-                  <button className="block text-white font-['Inria_Serif'] text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
+                  <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
                     Listen now
                   </button>
-                  <button className="block text-white font-['Inria_Serif'] text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
+                  <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
                     Tour dates
                   </button>
-                  <button className="block text-white font-['Inria_Serif'] text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
+                  <button className="block text-white font-inria-serif text-lg md:text-2xl lg:text-[30px] font-light tracking-wide hover:opacity-80 transition-opacity text-left">
                     Merch
                   </button>
                 </div>
