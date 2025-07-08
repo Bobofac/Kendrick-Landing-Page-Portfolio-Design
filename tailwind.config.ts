@@ -13,7 +13,13 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        "island-moments": ["Island Moments", "cursive"],
+        "inria-serif": ["Inria Serif", "serif"],
+      },
       colors: {
+        "navy-blue": "hsl(var(--navy-blue))",
+        "burgundy-red": "hsl(var(--burgundy-red))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
