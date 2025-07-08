@@ -37,10 +37,11 @@ export default function Index() {
       <div className="absolute inset-0 flex items-center justify-center z-15">
         <h1 className="font-inria-serif font-bold text-6xl md:text-8xl lg:text-9xl xl:text-[140px] leading-none tracking-wide animate-fade-in-up">
           <span
-            className="bg-gradient-to-r from-[rgba(255,0,0,0.8)] to-[rgba(0,0,255,0.8)] bg-clip-text text-transparent"
+            className="bg-gradient-to-r from-[rgba(255,0,0,1)] to-[rgba(0,0,255,1)] bg-clip-text text-transparent"
             style={{
-              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-              WebkitTextStroke: "1px rgba(0,0,0,0.1)",
+              textShadow:
+                "0px 4px 8px rgba(0, 0, 0, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.3)",
+              WebkitTextStroke: "2px rgba(255,255,255,0.3)",
             }}
           >
             KENDRICK LAMAR
@@ -54,10 +55,7 @@ export default function Index() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/960fdbe5cbd2ea8636d43f75f1ba0a2bef04942e?width=1636"
             alt="Kendrick Lamar"
-            className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] h-auto object-cover shadow-[0px_4px_30px_0px_rgba(0,0,0,0.5)]"
-            style={{
-              filter: "drop-shadow(0px 4px 30px rgba(0,0,0,0.7))",
-            }}
+            className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] h-auto object-cover opacity-90"
           />
         </div>
       </div>
