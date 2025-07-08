@@ -1,53 +1,15 @@
 export default function Index() {
   return (
     <div className="h-screen relative overflow-hidden">
-      {/* Left Section - Navy Blue */}
+      {/* Left Section - Navy Blue (50%) */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="absolute left-0 top-0 w-full md:w-[55%] h-full bg-[#1A1A59] z-10 animate-slide-in-left">
-          <svg
-            className="absolute inset-0 w-full h-full object-cover"
-            viewBox="0 0 703 832"
-            fill="none"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <path
-              d="M0 0H647C647 0 515.333 248.5 630 392.5C772.935 572 664.5 754 647 832C591.686 1078.54 0 832 0 832V0Z"
-              fill="#1A1A59"
-            />
-          </svg>
-        </div>
+        <div className="absolute left-0 top-0 w-[50%] h-full bg-[#1A1A59] z-10 animate-slide-in-left"></div>
 
-        {/* Right Section - Burgundy Red */}
-        <div className="absolute right-0 top-0 w-full md:w-[62%] h-full bg-[#8A1919] z-0 animate-slide-in-right">
-          <svg
-            className="absolute inset-0 w-full h-full object-cover"
-            viewBox="0 0 658 832"
-            fill="none"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <path
-              d="M73.9999 0C123 -95 476.907 -123.219 659 0C841.093 123.219 841.093 708.781 659 832C476.907 955.219 68.2515 943.684 66.4999 868C64.7483 792.316 117 716.5 117 650C133.5 401.5 18.5 379.5 3.99992 271.5C-10.5001 163.5 25 95 73.9999 0Z"
-              fill="#8A1919"
-            />
-          </svg>
-        </div>
+        {/* Right Section - Burgundy Red (50%) */}
+        <div className="absolute right-0 top-0 w-[50%] h-full bg-[#8A1919] z-10 animate-slide-in-right"></div>
       </div>
 
-      {/* KENDRICK LAMAR Text - Behind Image */}
-      <div className="absolute inset-0 flex items-center justify-center z-15">
-        <h1 className="font-inria-serif font-bold text-6xl md:text-8xl lg:text-9xl xl:text-[140px] leading-none tracking-wide animate-fade-in-up">
-          <span
-            className="bg-gradient-to-r from-[rgba(255,0,0,1)] to-[rgba(0,0,255,1)] bg-clip-text text-transparent"
-            style={{
-              WebkitTextStroke: "3px rgba(255,255,255,0.8)",
-            }}
-          >
-            KENDRICK LAMAR
-          </span>
-        </h1>
-      </div>
-
-      {/* Centered Image - Above Text */}
+      {/* Centered Image */}
       <div className="absolute inset-0 flex items-end justify-center z-20">
         <div className="animate-scale-in">
           <img
