@@ -65,7 +65,7 @@ export default function Index() {
               {/* Left Content */}
               <div className="order-2 lg:order-1 space-y-6 md:space-y-8 lg:space-y-12">
                 {/* Main Heading */}
-                <h1 className="font-['Inria_Serif'] font-bold text-4xl md:text-6xl lg:text-7xl xl:text-[128px] leading-none tracking-wide">
+                <h1 className="font-inria-serif font-bold text-4xl md:text-6xl lg:text-7xl xl:text-[128px] leading-none tracking-wide">
                   <span
                     className="bg-gradient-to-r from-[rgba(255,0,0,0.8)] to-[rgba(0,0,255,0.8)] bg-clip-text text-transparent"
                     style={{
